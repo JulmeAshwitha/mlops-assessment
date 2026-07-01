@@ -1,0 +1,88 @@
+2026-07-01 22:32:01,612 | INFO | Job Started
+2026-07-01 22:32:01,618 | INFO | Config Loaded | Seed=42 Window=5 Version=v1
+2026-07-01 22:32:01,632 | INFO | Rows Loaded : 10000
+2026-07-01 22:32:01,638 | INFO | Rolling Mean Computed
+2026-07-01 22:32:01,638 | INFO | Signals Generated
+2026-07-01 22:32:01,638 | INFO | Signal Rate : 0.4989
+2026-07-01 22:32:01,638 | INFO | Job Completed Successfully
+2026-07-01 22:52:32,242 | INFO | Job Started
+2026-07-01 22:52:32,242 | INFO | Config Loaded | Seed=42 Window=5 Version=v1
+2026-07-01 22:52:32,261 | INFO | Rows Loaded : 10000
+2026-07-01 22:52:32,268 | INFO | Rolling Mean Computed
+2026-07-01 22:52:32,268 | INFO | Signals Generated
+2026-07-01 22:52:32,268 | INFO | Signal Rate : 0.4989
+2026-07-01 22:52:32,268 | INFO | Job Completed Successfully
+2026-07-01 22:54:07,748 | INFO | Job Started
+2026-07-01 22:54:07,748 | INFO | Config Loaded | Seed=42 Window=5 Version=v1
+2026-07-01 22:54:07,761 | INFO | Rows Loaded : 10000
+2026-07-01 22:54:07,764 | INFO | Rolling Mean Computed
+2026-07-01 22:54:07,764 | INFO | Signals Generated
+2026-07-01 22:54:07,764 | INFO | Signal Rate : 0.4989
+2026-07-01 22:54:07,764 | INFO | Job Completed Successfully
+2026-07-01 22:55:21,930 | INFO | Job Started
+2026-07-01 22:55:21,931 | INFO | Config Loaded | Seed=42 Window=5 Version=v1
+2026-07-01 22:55:21,944 | INFO | Rows Loaded : 10000
+2026-07-01 22:55:21,946 | INFO | Rolling Mean Computed
+2026-07-01 22:55:21,946 | INFO | Signals Generated
+2026-07-01 22:55:21,946 | INFO | Signal Rate : 0.4989
+2026-07-01 22:55:21,946 | INFO | Job Completed Successfully
+2026-07-01 22:57:52,933 | INFO | Job Started
+2026-07-01 22:57:52,934 | INFO | Config Loaded | Seed=42 Window=5 Version=v1
+2026-07-01 22:57:52,950 | INFO | Rows Loaded : 10000
+2026-07-01 22:57:52,953 | INFO | Rolling Mean Computed
+2026-07-01 22:57:52,953 | INFO | Signals Generated
+2026-07-01 22:57:52,953 | INFO | Signal Rate : 0.4989
+2026-07-01 22:57:52,953 | INFO | Job Completed Successfully
+2026-07-01 22:57:52,953 | ERROR | name 'json' is not defined
+Traceback (most recent call last):
+  File "D:\MLINTERN\mltask\run.py", line 106, in main
+    print(json.dumps(metrics, indent=4))
+          ^^^^
+NameError: name 'json' is not defined. Did you forget to import 'json'
+2026-07-01 22:59:16,487 | INFO | Job Started
+2026-07-01 22:59:16,488 | INFO | Config Loaded | Seed=42 Window=5 Version=v1
+2026-07-01 22:59:16,506 | INFO | Rows Loaded : 10000
+2026-07-01 22:59:16,509 | INFO | Rolling Mean Computed
+2026-07-01 22:59:16,509 | INFO | Signals Generated
+2026-07-01 22:59:16,509 | INFO | Signal Rate : 0.4989
+2026-07-01 22:59:16,509 | INFO | Job Completed Successfully
+2026-07-01 23:02:48,350 | INFO | Job Started
+2026-07-01 23:02:48,351 | INFO | Config Loaded | Seed=42 Window=5 Version=v1
+2026-07-01 23:02:48,351 | ERROR | Input file not found.
+Traceback (most recent call last):
+  File "D:\MLINTERN\mltask\src\data_loader.py", line 9, in load_dataset
+    df = pd.read_csv(path)
+         ^^^^^^^^^^^^^^^^^
+  File "C:\Users\nikki\AppData\Roaming\Python\Python312\site-packages\pandas\io\parsers\readers.py", line 1026, in read_csv
+    return _read(filepath_or_buffer, kwds)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\nikki\AppData\Roaming\Python\Python312\site-packages\pandas\io\parsers\readers.py", line 620, in _read
+    parser = TextFileReader(filepath_or_buffer, **kwds)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\nikki\AppData\Roaming\Python\Python312\site-packages\pandas\io\parsers\readers.py", line 1620, in __init__
+    self._engine = self._make_engine(f, self.engine)
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\nikki\AppData\Roaming\Python\Python312\site-packages\pandas\io\parsers\readers.py", line 1880, in _make_engine
+    self.handles = get_handle(
+                   ^^^^^^^^^^^
+  File "C:\Users\nikki\AppData\Roaming\Python\Python312\site-packages\pandas\io\common.py", line 873, in get_handle
+    handle = open(
+             ^^^^^
+FileNotFoundError: [Errno 2] No such file or directory: 'cleaned_data.csv'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\MLINTERN\mltask\run.py", line 64, in main
+    df = load_dataset(args.input)
+         ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\MLINTERN\mltask\src\data_loader.py", line 12, in load_dataset
+    raise FileNotFoundError("Input file not found.")
+FileNotFoundError: Input file not found.
+2026-07-01 23:03:29,720 | INFO | Job Started
+2026-07-01 23:03:29,721 | INFO | Config Loaded | Seed=42 Window=5 Version=v1
+2026-07-01 23:03:29,732 | INFO | Rows Loaded : 10000
+2026-07-01 23:03:29,734 | INFO | Rolling Mean Computed
+2026-07-01 23:03:29,734 | INFO | Signals Generated
+2026-07-01 23:03:29,734 | INFO | Signal Rate : 0.4989
+2026-07-01 23:03:29,734 | INFO | Job Completed Successfully

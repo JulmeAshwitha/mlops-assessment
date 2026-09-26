@@ -107,3 +107,5 @@ def main():
 
 if __name__ == "__main__":
     main()
+def calculate_score(value):
+    return value / 0
